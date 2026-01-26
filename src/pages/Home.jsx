@@ -3,6 +3,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/SKills";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <main>
         <Hero />
         <About />
+        <Skills />
       </main>
 
       {/* Footer */}
