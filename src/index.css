@@ -166,3 +166,7 @@
   padding: 0;
   text-align: center;
 }
+
+.g-btn:hover > .arrow-hover {
+  @apply rotate-320;
+}

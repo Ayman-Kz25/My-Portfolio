@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/SKills";
+import Projects from "@/components/Projects";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         <Hero />
         <About />
         <Skills />
+        <Projects />
       </main>
 
       {/* Footer */}
