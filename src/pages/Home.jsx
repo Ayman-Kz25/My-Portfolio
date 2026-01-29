@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/SKills";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </main>
 
       {/* Footer */}
