@@ -76,7 +76,7 @@ function Hero() {
           <p className="text-muted-foreground mt-2">Technologies Used</p>
         </div>
 
-        <div className="flex justify-center gap-4 opacity-0 animate-fade-in-delay-4">
+        <div className="flex justify-center gap-4">
           <a href="#projects" className="cosmic-btn">
             View My Projects
           </a>
