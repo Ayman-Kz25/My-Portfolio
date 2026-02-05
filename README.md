@@ -1,16 +1,76 @@
-# React + Vite
+## 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website showcasing my projects, technical skills, and development journey as a Frontend Developer and Flutter Learner.
 
-Currently, two official plugins are available:
+This portfolio reflects my passion for building clean user interfaces, interactive web experiences, and continuously improving through real-world projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👩‍💻 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio was built to highlight:
 
-## Expanding the ESLint configuration
+- My featured web and Flutter projects  
+- Technical skills and expertise  
+- Professional background and interests  
+- Contact information for collaboration opportunities  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The design focuses on a modern UI, smooth layout structure, and responsive behavior across devices.
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js  
+- Vite  
+- Tailwind CSS  
+- JavaScript (ES6+)  
+- Lucide Icons  
+
+---
+
+## ✨ Features
+
+- Fully responsive design  
+- Clean and modern UI  
+- Featured projects section with live demo & GitHub links  
+- Skills section with categorized expertise  
+- Smooth navigation between sections  
+- Download CV option  
+- Contact section  
+
+---
+
+## 📂 Project Structure
+src/ 
+├── components/ 
+├── sections/ 
+├── assets/ 
+├── App.jsx 
+└── main.jsx
+
+---
+
+## 🎯 Purpose
+
+This portfolio represents my growth as a developer and demonstrates:
+
+- Frontend development skills  
+- UI/UX understanding  
+- Component-based architecture  
+- Responsive web design principles  
+
+It is part of my continuous learning journey in modern web technologies and mobile app development.
+
+---
+
+## 📬 Contact
+
+If you’d like to collaborate or connect:
+
+- LinkedIn: https://www.linkedin.com/in/ayman-kz-8807b4379
+- Email: kamalakz786@gmail.com
+
+---
+
+⭐ If you like this project, feel free to give it a star!
