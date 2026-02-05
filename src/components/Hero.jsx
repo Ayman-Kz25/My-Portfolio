@@ -76,11 +76,11 @@ function Hero() {
           <p className="text-muted-foreground mt-2">Technologies Used</p>
         </div>
 
-                  <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-btn">
-              View My Projects
-            </a>
-          </div>
+        <div className="pt-4 opacity-0 animate-fade-in-delay-4 mx-auto">
+          <a href="#projects" className="cosmic-btn">
+            View My Projects
+          </a>
+        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
