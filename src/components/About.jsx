@@ -35,7 +35,8 @@ function About() {
                 Get In Touch
               </a>
               <a
-                href=""
+                href="https://drive.google.com/file/d/1anvi5iAw7czU0wiwhiWYkZn8wCznmoYx/view?usp=drive_link"
+                target="_blank"
                 className="px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary/10 hover:text-fore-ground transition-colors duration-300 font-semibold"
               >
                 Download CV
