@@ -13,23 +13,16 @@ function About() {
             <h3 className="text-2xl font-semibold">
               Passionate Front-end Web Developer and Data Science Enthusiast
             </h3>
-            <p className="text-muted-primary">
-              I am a Software Engineering student with a strong foundation in
-              frontend development and a growing interest in mobile app
-              development using Flutter. I enjoy transforming ideas into clean,
-              responsive, and user-friendly interfaces while focusing on
-              clarity, structure, and usability.
-            </p>
-            <p className="text-muted-primary">
-              Alongside frontend and Flutter development, I am actively building
-              skills in data analytics and data visualization, exploring how
-              data can drive better decisions and meaningful insights. I believe
-              in learning by doing and regularly work on mini projects to
-              strengthen my understanding of core concepts, widgets, and
-              workflows. I am motivated by continuous improvement, curious about
-              modern technologies, and eager to apply my skills to real-world
-              projects while growing as a developer and analyst.
-            </p>
+            <p className="text-muted-foreground">
+  I’m a Software Engineering student focused on building responsive, 
+  accessible, and performance-driven web interfaces. I enjoy transforming 
+  ideas into structured, user-friendly digital experiences using modern 
+  frontend technologies and Flutter. 
+
+  Alongside development, I explore data analytics and visualization to 
+  better understand how data drives impactful decisions.
+</p>
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-btn">
                 Get In Touch
