@@ -13,10 +13,21 @@ const navItems = [
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
+      const sections = navItems.map((item) => item.href.replace("#", ""));
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+          }
+        }
+      });
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,8 +38,8 @@ function Navbar() {
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
         isScrolled
-          ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
-          : "py-5",
+          ? "py-4 bg-background/80 backdrop-blur-md shadow-xs"
+          : "py-4",
       )}
     >
       <div className="container flex items-center justify-between">
@@ -37,21 +48,30 @@ function Navbar() {
           className="text-xl font-bold text-primary flex items-center"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground">My</span> Portfolio
+            <span className="text-glow text-foreground">Ayman</span> Kz
           </span>
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item, key) => {
+            const sectionId = item.href.replace("#", "");
+
+            return (
+              <a
+                key={key}
+                href={item.href}
+                className={cn(
+                  "transition-colors duration-300",
+                  activeSection === item.href.replace("#", "")
+                    ? "text-primary"
+                    : "text-foreground/80 hover:text-primary",
+                )}
+              >
+                {item.name}
+              </a>
+            );
+          })}
         </div>
 
         {/* Mobile Nav */}
@@ -73,18 +93,26 @@ function Navbar() {
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                }}
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item, key) => {
+              const sectionId = item.href.replace("#", "");
+              return (
+                <a
+                  key={key}
+                  href={item.href}
+                  className={cn(
+                    "transition-colors duration-300",
+                    activeSection == sectionId
+                      ? "text-primary font-medium"
+                      : "text-foreground/80 hover:text-primary",
+                  )}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
