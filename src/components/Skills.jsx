@@ -43,7 +43,7 @@ function Skills() {
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
                 activeCategory == category
                   ? "bg-primary text-foreground-primary"
                   : "bg-secondary/70 text-foreground hover:bg-secondary",
