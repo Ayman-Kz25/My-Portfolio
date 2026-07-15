@@ -64,7 +64,7 @@ function Hero() {
 
           <div className="gradient-border p-6 card-hover text-center">
             <h3 className="text-3xl font-bold text-primary">
-              <Counter end={12} />+
+              <Counter end={15} />+
             </h3>
             <p className="text-muted-foreground mt-2">Projects Completed</p>
           </div>
